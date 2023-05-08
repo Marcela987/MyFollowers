@@ -14,6 +14,8 @@
 		83230D312A03456300AC7552 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83230D302A03456300AC7552 /* UIViewController+Ext.swift */; };
 		83230D372A0886DE00AC7552 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83230D362A0886DE00AC7552 /* Follower.swift */; };
 		83230D392A08888200AC7552 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83230D382A08888200AC7552 /* User.swift */; };
+		83230D3C2A0892E600AC7552 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83230D3B2A0892E600AC7552 /* NetworkManager.swift */; };
+		83230D3F2A089ADC00AC7552 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83230D3E2A089ADC00AC7552 /* GFError.swift */; };
 		8350A2AC29E7808700D77754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350A2AB29E7808700D77754 /* AppDelegate.swift */; };
 		8350A2AE29E7808700D77754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350A2AD29E7808700D77754 /* SceneDelegate.swift */; };
 		8350A2B529E7808700D77754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8350A2B429E7808700D77754 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		83230D302A03456300AC7552 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		83230D362A0886DE00AC7552 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		83230D382A08888200AC7552 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83230D3B2A0892E600AC7552 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		83230D3E2A089ADC00AC7552 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		8350A2A829E7808700D77754 /* MyFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8350A2AB29E7808700D77754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8350A2AD29E7808700D77754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		83230D3A2A0892CF00AC7552 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				83230D3B2A0892E600AC7552 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		83230D3D2A089ACC00AC7552 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				83230D3E2A089ADC00AC7552 /* GFError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8350A29F29E7808700D77754 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +187,8 @@
 		8350A2AA29E7808700D77754 /* MyFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				83230D3D2A089ACC00AC7552 /* Utils */,
+				83230D3A2A0892CF00AC7552 /* Manager */,
 				83230D352A0886CC00AC7552 /* Models */,
 				8350A2B929E7808700D77754 /* Info.plist */,
 				83230D342A03496200AC7552 /* Support */,
@@ -331,9 +353,11 @@
 				83230D312A03456300AC7552 /* UIViewController+Ext.swift in Sources */,
 				8350A2E029E78BD100D77754 /* GFButton.swift in Sources */,
 				83230D282A03345500AC7552 /* FollowerListViewController.swift in Sources */,
+				83230D3F2A089ADC00AC7552 /* GFError.swift in Sources */,
 				83230D2D2A033E3300AC7552 /* GFBodyLabel.swift in Sources */,
 				83230D372A0886DE00AC7552 /* Follower.swift in Sources */,
 				83230D2A2A033A8000AC7552 /* GFTitleLabel.swift in Sources */,
+				83230D3C2A0892E600AC7552 /* NetworkManager.swift in Sources */,
 				8350A2AC29E7808700D77754 /* AppDelegate.swift in Sources */,
 				8350A2DE29E7860700D77754 /* FavoritesListViewController.swift in Sources */,
 				8350A2AE29E7808700D77754 /* SceneDelegate.swift in Sources */,
